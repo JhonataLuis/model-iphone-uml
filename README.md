@@ -4,7 +4,7 @@ Project Java POO com modelagem UML
 ## Principais Tecnologias
 - **Java 21**: Utilizamos a versão LTS do Java para tirar vantagem da últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
 
-Este repositório tem como objetivo apresentar conceitos essenciais da linguagem **Java**, utilizando a versão **Java 21**, com foco em **Programação Orientada a Objetos (POO)**. Também são abordados **diagramas de classes**, **polimorfismo** e **classes abstratas**, fundamentais para um bom design de software.
+-**Repsitory**: Este repositório tem como objetivo apresentar conceitos essenciais da linguagem **Java**, utilizando a versão **Java 21**, com foco em **Programação Orientada a Objetos (POO)**. Também são abordados **diagramas de classes**, **polimorfismo** e **classes abstratas**, fundamentais para um bom design de software.
 
 ---
 
@@ -12,7 +12,6 @@ Este repositório tem como objetivo apresentar conceitos essenciais da linguagem
 
 A versão **Java 21** traz melhorias de performance, segurança e novas funcionalidades. Algumas das novidades incluem:
 
-- **Pattern Matching** aprimorado (para `switch`, `instanceof`)
 - **Records** para representar dados imutáveis
 - **Sequenced Collections**
 - **Virtual Threads** (preview) para melhor desempenho com concorrência
@@ -32,7 +31,6 @@ POO é um paradigma que organiza o código com base em **objetos**, que são ins
 4. **Polimorfismo** – Permitir que métodos se comportem de formas diferentes
 
 ---
-
 
 
 ## Diagrama de Classes

@@ -38,7 +38,7 @@ POO é um paradigma que organiza o código com base em **objetos**, que são ins
 
 ## Diagrama de Classes
 
-´```mermaid
+´´´mermaid
 classDiagram
   class User {
     +String name
@@ -75,4 +75,4 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N"  News
 
-  ```
+  ´´´

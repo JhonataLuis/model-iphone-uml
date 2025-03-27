@@ -40,39 +40,46 @@ POO é um paradigma que organiza o código com base em **objetos**, que são ins
 
 ```mermaid
 classDiagram
-  class User {
-    +String name
-    +Account account
-    +List~Feature~ features
-    +Card card
-    +List~News~ news
-  }
+    class Dispositivo {
+        <<abstract>>
+        -String modelo
+        -int armazenamento
+        +getModelo() String
+        +getArmazenamento() int
+        +ligar() void
+        +desligar() void
+    }
 
-  class Account {
-    +String number
-    +String agency
-    +float balance
-    +float limit
-  }
+    class iPhone {
+        +iPhone(String modelo, int armazenamento)
+        +ligar() void
+        +desligar() void
+    }
 
-  class Feature {
-    +String icon
-    +String description
-  }
+    class ReprodutorMusical {
+        <<interface>>
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(String musica) void
+    }
 
-  class Card {
-    +String number
-    +float limit
-  }
+    class AparelhoTelefonico {
+        <<interface>>
+        +ligar(String numero) void
+        +atender() void
+        +iniciarCorreioVoz() void
+    }
 
-  class News {
-    +String icon
-    +String description
-  }
+    class NavegadorInternet {
+        <<interface>>
+        +exibirPagina(String url) void
+        +adicionarNovaAba(String url) void
+        +atualizarPagina() void
+    }
 
-  User --> Account
-  User --> "0..*" Feature
-  User --> Card
-  User --> "0..*" News
+    Dispositivo <|-- iPhone
+    ReprodutorMusical <|.. iPhone
+    AparelhoTelefonico <|.. iPhone
+    NavegadorInternet <|.. iPhone
 
   ```
